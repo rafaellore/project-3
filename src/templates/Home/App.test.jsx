@@ -1,15 +1,10 @@
-import { render, screen } from '@testing-library/react';
-import { ThemeProvider } from 'styled-components';
+import { screen } from '@testing-library/react';
 import Home from '.';
-import { theme } from '../../styles/theme';
-
-export const renderWithTheme = (children) => {
-  return render(<ThemeProvider theme={theme}>{children}</ThemeProvider>);
-};
+import { renderTheme } from '../../styles/render-theme';
 
 test('renders learn react link', () => {
   //example of debug
-  const { debug } = renderWithTheme(<Home />);
+  const { debug } = renderTheme(<Home />);
   debug();
 
   // a example to test the styles css
