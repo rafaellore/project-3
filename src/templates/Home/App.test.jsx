@@ -12,15 +12,16 @@ test('renders learn react link', () => {
   const { debug } = renderWithTheme(<Home />);
   debug();
 
-  // a example for to test the styles css
+  // a example to test the styles css
   const headingContainer = screen.getByRole('heading', {
-    name: 'oi',
-  }).parentElement;
-
-  expect(headingContainer).toHaveStyle({
-    background: theme.colors.mainBg,
+    name: 'Meu titulo',
   });
 
-  // this online works because of jest-styled-components
-  expect(headingContainer).toHaveStyleRule('background', 'red');
+  // this work without jest-styled-components
+  expect(headingContainer).toHaveStyle({
+    color: '#0A1128',
+  });
+
+  // this only works because of jest-styled-components
+  expect(headingContainer).toHaveStyleRule('color', '#0A1128');
 });

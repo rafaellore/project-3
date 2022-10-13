@@ -10,6 +10,19 @@ export const parameters = {
       date: /Date$/,
     },
   },
+  backgrounds: {
+    default: 'light',
+    values: [
+      {
+        name: 'light',
+        value: theme.colors.white,
+      },
+      {
+        name: 'dark',
+        value: theme.colors.primaryColor,
+      },
+    ],
+  },
 };
 
 // this allows to work with Provider or some another dependences
