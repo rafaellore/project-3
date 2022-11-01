@@ -11,9 +11,9 @@ describe('<Text />', () => {
   it('renders the p tag correctly', () => {
     const { container } = renderTheme(<Text>Simple text</Text>);
 
-    const p = container.querySelector('p');
+    const div = container.querySelector('div');
 
-    expect(p.tagName.toLowerCase()).toBe('p');
+    expect(div.tagName.toLowerCase()).toBe('div');
   });
 
   it('renders the text currectly', () => {

@@ -6,5 +6,5 @@ export const SectionContainer = ({ children }) => {
 };
 
 SectionContainer.propTypes = {
-  children: P.string,
+  children: P.node.isRequired,
 };

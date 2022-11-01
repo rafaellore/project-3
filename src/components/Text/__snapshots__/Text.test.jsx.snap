@@ -5,9 +5,9 @@ exports[`<Text /> should match snapshot 1`] = `
   font-size: 1.5rem;
 }
 
-<p
+<div
   class="c0"
 >
   Simple text
-</p>
+</div>
 `;
