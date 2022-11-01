@@ -11,6 +11,10 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  html {
+     scroll-behavior: smooth;
+  }
+
   body {
     font-size: 1.6rem;
     font-family: 'Open Sans', sans-serif;
@@ -18,6 +22,7 @@ export const GlobalStyles = createGlobalStyle`
 
   h1, h2, h3, h4, h5, h6 {
     margin: ${({ theme }) => theme.spacings.large} 0;
+    font-family: 'Montserrat', sans-serif;
   }
 
   p {
