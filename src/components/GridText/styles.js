@@ -1,10 +1,10 @@
 import styled, { css } from 'styled-components';
 import { Title as HeadingContainer } from '../Heading/styles';
-import { Container as Text } from '../Text/styles';
+import { Container as TextComponent } from '../Text/styles';
 
 export const Container = styled.div`
   ${({ theme }) => css`
-    ${Text} {
+    ${TextComponent} {
       margin-bottom: ${theme.spacings.xhuge};
     }
   `}
@@ -16,6 +16,12 @@ export const Grid = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: ${theme.spacings.large};
+    overflow: hidden;
+    width: 100%;
+    align-items: center;
+    @media ${theme.media.lteMedium} {
+      grid-template-columns: 1fr;
+    }
   `}
 `;
 

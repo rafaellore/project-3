@@ -38,9 +38,10 @@ exports[`<GridImage /> should render with background 1`] = `
 }
 
 .c1 {
-  max-width: 120rem;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
+  width: 100%;
 }
 
 .c0 {
@@ -185,9 +186,10 @@ exports[`<GridImage /> should render without background 1`] = `
 }
 
 .c1 {
-  max-width: 120rem;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
+  width: 100%;
 }
 
 .c0 {

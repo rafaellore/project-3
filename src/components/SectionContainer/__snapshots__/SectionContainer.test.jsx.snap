@@ -2,9 +2,10 @@
 
 exports[`<SectionContainer /> should render content 1`] = `
 .c0 {
-  max-width: 120rem;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
+  width: 100%;
 }
 
 <div>

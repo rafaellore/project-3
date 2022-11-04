@@ -1,14 +1,8 @@
-import { Heading } from '../../components/Heading';
-import * as Styled from './styles';
+import { Base } from '../Base';
+import { argsMocked } from '../Base/stories';
 
 function Home() {
-  return (
-    <div className="App">
-      <Styled.Wrapper>
-        <Heading>Meu titulo</Heading>
-      </Styled.Wrapper>
-    </div>
-  );
+  return <Base {...argsMocked} />;
 }
 
 export default Home;
